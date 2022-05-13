@@ -1,10 +1,10 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Local Cat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="18">
+  <configuration default="false" name="Local Cat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.58 (Ubuntu)" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="18">
     <option name="UPDATING_POLICY" value="restart-server" />
     <deployment>
-      <artifact name="SpringMVC:war exploded">
+      <artifact name="SpringMVC:war">
         <settings>
-          <option name="CONTEXT_PATH" value="/SpringMVC_war_exploded" />
+          <option name="CONTEXT_PATH" value="/SpringMVC_war" />
         </settings>
       </artifact>
     </deployment>
@@ -82,7 +82,7 @@
     <method v="2">
       <option name="Make" enabled="true" />
       <option name="BuildArtifacts" enabled="true">
-        <artifact name="SpringMVC:war exploded" />
+        <artifact name="SpringMVC:war" />
       </option>
     </method>
   </configuration>
