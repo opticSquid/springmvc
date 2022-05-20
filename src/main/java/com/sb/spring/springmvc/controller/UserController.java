@@ -21,7 +21,8 @@ public class UserController {
 	public ModelAndView registerUser(@ModelAttribute("user") User user) {
 		System.out.println(user);
 		ModelAndView modelandview = new ModelAndView();
-		modelandview.setViewName("userReg");
+		modelandview.setViewName("regSuccess");
+		modelandview.addObject(user);
 		return modelandview;
 	}
 }
