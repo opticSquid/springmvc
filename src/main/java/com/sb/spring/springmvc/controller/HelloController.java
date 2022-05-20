@@ -6,10 +6,12 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class HelloController {
-    @RequestMapping("/hello")
-    public ModelAndView hello() {
-        ModelAndView modelAndView = new ModelAndView();
-        modelAndView.setViewName("hello");
-        return modelAndView;
-    }
+	@RequestMapping("/hello")
+	public ModelAndView hello() {
+		ModelAndView modelAndView = new ModelAndView();
+		modelAndView.setViewName("hello");
+		modelAndView.addObject("id", 123);
+		modelAndView.addObject("salary", "$10");
+		return modelAndView;
+	}
 }
